@@ -1,6 +1,29 @@
-## Creating Test Case Template
+## Getting Started
 
-`cy-gen` is a node script that creates template files, in their respective folders, with boilerplate code and file extension.
+`cy-gen` is a node.js CLI tool that creates template files, in their respective folders, with boilerplate code and file extension.
+
+To install the CLI:
+
+1. Clone this repo
+
+    ```bash
+    git clone https://github.com/Abdullah-yasir/cypress-testcases-files-gen.git
+    ```
+
+2. `cd` to project dir
+    ```bash
+    cd cypress-testcases-files-gen
+    ```
+3. Install the dependencies
+    ```bash
+    npm install
+    ```
+4. Install the tool globally in your system
+    ```bash
+    npm install . -g
+    ```
+
+## Creating Test Case Template
 
 Syntax
 
