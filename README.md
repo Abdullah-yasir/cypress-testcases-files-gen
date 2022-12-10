@@ -4,24 +4,19 @@
 
 To install the CLI:
 
-1. Clone this repo
+```bash
+# 1. Clone this repo
+git clone https://github.com/Abdullah-yasir/cypress-testcases-files-gen.git
 
-    ```bash
-    git clone https://github.com/Abdullah-yasir/cypress-testcases-files-gen.git
-    ```
+# 2. `cd` to clonned project directory
+cd cypress-testcases-files-gen
 
-2. `cd` to project dir
-    ```bash
-    cd cypress-testcases-files-gen
-    ```
-3. Install the dependencies
-    ```bash
-    npm install
-    ```
-4. Install the tool globally in your system
-    ```bash
-    npm install . -g
-    ```
+# 3. Install the dependencies
+npm install
+
+#4. Install the tool globally in your system
+npm install . -g
+```
 
 ## Creating Test Case Template
 
