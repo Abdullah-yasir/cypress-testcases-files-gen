@@ -1,0 +1,29 @@
+{
+    "name": "cypress-template-gen",
+    "version": "1.0.0",
+    "description": "Create cypress test templates, according to Jira Tickets",
+    "author": "Abdullah Yasir",
+    "main": "index.js",
+    "scripts": {
+        "lint": "prettier -c . && eslint --ignore-path .gitignore .",
+        "lint:fix": "prettier --write . && eslint --ignore-path .gitignore . --fix"
+    },
+    "bin": {
+        "cy-gen": "./bin/index.js"
+    },
+    "keywords": [
+        "cypress",
+        "jira",
+        "Xray",
+        "automation",
+        "test-templates",
+        "gen"
+    ],
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.29.0"
+    },
+    "dependencies": {
+        "cli-select": "^1.1.2"
+    }
+}

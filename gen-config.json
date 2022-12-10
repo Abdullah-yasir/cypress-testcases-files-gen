@@ -1,0 +1,7 @@
+{
+    "paths": {
+        "e2e": ["E2E"],
+        "fixtures": ["Fixtures"],
+        "testCases": ["Support", "TestCases"]
+    }
+}
