@@ -19,8 +19,8 @@ cy-gen XYZ-123_SomeTestCase
 
 Running above command will ask you to:
 
--   Select the folder to put test case in.
--   Enter description of the test case.
+1.  Select the folder to put test case in ( if e2e dir contains directories ).
+2.  Enter description of the test case.
 
 After hitting `enter` it creates two files:
 
