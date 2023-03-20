@@ -1,6 +1,6 @@
 ## Getting Started
 
-`cy-gen` is a node.js CLI tool that creates template files, in their respective folders, with boilerplate code and file extension.
+`cygen` is a node.js CLI tool that creates template files, in their respective folders, with boilerplate code and file extension.
 
 To install the CLI:
 
@@ -23,14 +23,14 @@ npm install . -g
 Syntax
 
 ```bash
-cy-gen <testCaseName> [fixture]
+cygen <testCaseName> [fixture]
 ```
 
 For example if you want to create files for _XYZ-123_SomeTestCase_ test case  
 Run
 
 ```bash
-cy-gen XYZ-123_SomeTestCase
+cygen XYZ-123_SomeTestCase
 ```
 
 > Note that we've given no file extension above.
@@ -52,7 +52,7 @@ If fixture file is also needed, pass `--fixture` flag at the end. i.e.
 Run
 
 ```bash
-cy-gen XYZ-123_SomeTestCase --fixture
+cygen XYZ-123_SomeTestCase --fixture
 ```
 
 Now above command creates three files:
@@ -64,5 +64,5 @@ Now above command creates three files:
 To show help
 
 ```bash
-cy-gen help
+cygen help
 ```

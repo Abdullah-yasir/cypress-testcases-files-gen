@@ -9,7 +9,7 @@
         "lint:fix": "prettier --write . && eslint --ignore-path .gitignore . --fix"
     },
     "bin": {
-        "cy-gen": "./bin/index.js"
+        "cygen": "./bin/index.js"
     },
     "keywords": [
         "cypress",
