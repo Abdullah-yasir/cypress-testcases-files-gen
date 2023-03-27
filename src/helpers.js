@@ -1,7 +1,7 @@
 const fs = require('fs')
+const path = require('path')
 const readline = require('readline')
 
-const path = require('path')
 const cliSelect = require('cli-select')
 
 async function selectChildFolderResursive(parentFolder, foldersList = []) {
@@ -83,10 +83,10 @@ function appendImportInFile(importStatement, fileName) {
 
         // If there are already some import statements
         if (imports) {
-            let newImports = appendNewLine(imports) + importStatement
+            let newImports = withNewLine(imports) + importStatement
             fileContents = fileContents.replace(imports, newImports)
         } else {
-            fileContents = appendNewLine(importStatement, 2) + fileContents
+            fileContents = withNewLine(importStatement, 2) + fileContents
         }
 
         fs.writeFileSync(fileName, fileContents)
@@ -130,7 +130,7 @@ function matchImports(contents) {
     return contents.toString().match(re)
 }
 
-function appendNewLine(content, lines = 1) {
+function withNewLine(content, lines = 1) {
     if (!content) return ''
 
     return (
@@ -144,11 +144,11 @@ function appendNewLine(content, lines = 1) {
 function createFileIfNotExists(filePath, contents) {
     // Do not overrite existing files
     if (fs.existsSync(filePath)) {
-        console.log('❗️ Exists Already: ', appendNewLine(filePath))
+        console.log('❗️ Exists Already: ', withNewLine(filePath))
         return
     }
     fs.writeFileSync(filePath, contents)
-    console.log('✅ Created File: ', appendNewLine(filePath))
+    console.log('✅ Created File: ', withNewLine(filePath))
 }
 
 function mkdirIfNotExists(dirName) {
@@ -178,9 +178,7 @@ module.exports = {
     mkdirIfNotExists,
     getCypressPath,
     getUserConfig,
-    appendNewLine,
     validateInput,
-    matchImports,
     noBackSlash,
     filterName,
     getAbsPath,
